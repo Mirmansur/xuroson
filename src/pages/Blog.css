@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css2?family=Andika&display=swap);
+body {
+  background: rgb(16, 37, 79);
+  font-family: "Andika", sans-serif;
+}
+* {
+  text-decoration: none;
+  font-family: Andika !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 20px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.back-to-top:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.bloggs {
+  background-image: url(../assets/heross.jpg);
+  /* background-position: center; */
+  background-size: cover;
+}
+.blog {
+  display: flex;
+  /* align-items: ; */
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+
+  width: 100%;
+  height: 500px;
+}
+.pst {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  text-align: center;
+}
+
+.pst P {
+  color: yellowgreen;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.log {
+  width: 100%;
+  height: 500px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.large {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.large button {
+  background: rgb(29, 41, 154);
+  padding: 10px 20px;
+  border: 1px white solid;
+  color: white;
+  font-weight: bolder;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+.large button:hover {
+  transform: scale(1.08);
+}

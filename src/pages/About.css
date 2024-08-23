@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css2?family=Andika&display=swap);
+body {
+  background: rgb(16, 37, 79);
+  font-family: "Andika", sans-serif;
+}
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/about.jpg);
+  position: relative;
+}
+
+.abouts {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  z-index: 99;
+  font-weight: 600;
+  color: rgb(0, 255, 60);
+  font-size: 24px;
+  flex-direction: column;
+  top: 20px;
+}
+
+.abouts p,
+.abouts a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 255, 0);
+}
+
+.galery {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.bottomss {
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+}
+
+.hre {
+  border-radius: 8px;
+  background: rgb(0, 255, 0);
+}
+
+textarea {
+  width: 100%;
+}
+
+.three-input-two {
+  width: 290px;
+}
+
+.file {
+  border: 1px black solid;
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .hero {
+    /* height: auto; */
+    /* padding: 50px 0; */
+  }
+
+  .abouts {
+    font-size: 20px;
+  }
+
+  .galery {
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .bottomss {
+    align-items: center;
+  }
+
+  .three-input-two {
+    width: 100%;
+  }
+
+  .hre {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 0 10px;
+  }
+  .hero {
+    width: 100%;
+    height: 400px;
+  }
+
+  .abouts {
+    font-size: 18px;
+    display: none;
+  }
+
+  .bottomss {
+    align-items: center;
+  }
+
+  .hre {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .back-to-top {
+    position: absolute;
+    left: 50px;
+  }
+}
